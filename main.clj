@@ -20,7 +20,6 @@
 (defn remove-second [l] (concat (list (first l)) (rest(rest l))))
 
 (defn add-to-end [l x] (concat l (list x)))
-(def l (list 1 2 3 4 5))
 
 (def reverse (fn [l]
               (if (empty? l)
@@ -45,11 +44,8 @@
                   (get-max (rest l)))))
 
 
-;(get-max l)
-
 (defn greater-than-five? [l] 
         (map (fn [x] (if (> x 5) 'true' 'false' )) l))
 
 (defn concat-three [x y z]
-  (concat x (concat y z))
-  )
+  (concat x (concat y z)))

@@ -2,6 +2,7 @@
 
 (defn take-square [x] (* x x))
 ;problem is lack of parameters
+
 (defn sum-of-squares [x y]
 (+ (take-square x) (take-square y)))
 ;problem is parameters had functions in them
